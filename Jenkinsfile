@@ -31,12 +31,12 @@ pipeline{
             }
         }
 
-        stage("Static Code Analysis"){
+        stage("Quality Gate Analysis"){
             steps{
                script{
                    
                    def SonarQubecredentialsId = 'sonar-api'
-                   staticCodeAnalysis(SonarQubecredentialsId)
+                   QualityGate(SonarQubecredentialsId)
                }
             }
         }
