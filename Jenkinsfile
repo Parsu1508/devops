@@ -12,9 +12,14 @@ pipeline{
                    branch: "main",
                    url: "https://github.com/Parsu1508/devops.git"
                 )
-                //   git branch: 'main', url: 'https://github.com/Parsu1508/devops.git'
+            }
+        }
 
-                
+         stage("Unit Test mvanen"){
+            steps{ 
+               script{
+                5
+               }
             }
         }
     }
