@@ -18,7 +18,7 @@ pipeline{
          stage("Unit Test mvanen"){
             steps{ 
                script{
-                5
+                mvntest()
                }
             }
         }
