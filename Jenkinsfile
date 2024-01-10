@@ -1,4 +1,4 @@
-@Library('jenkins_shared_lib') _
+@Library('jenkins-shared-lib') _
 
 pipeline{
 
@@ -7,10 +7,7 @@ pipeline{
     stages{
         
         stage("git chckout"){
-            steps{
-
-                
-                  
+            steps{ 
                   gitCheckout{
                       branch: "main"
                       url: "https://github.com/Parsu1508/devops.git"
